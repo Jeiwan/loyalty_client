@@ -1,0 +1,2 @@
+describe Loyalty do
+end
