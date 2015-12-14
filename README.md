@@ -16,9 +16,13 @@ The second task was to integrate the API client into our Rails application to al
 # Structure
 
 There are three main operations:
+
 1. `Loyalty::LoyaltyService::Operations.sale`
+
 2. `Loyalty::LoyaltyService::Operations.return`
+
 3. `Loyalty::LoyaltyService::Operations.rollback`
+
 Each of them corresponding to certain operation: sale of goods, return of goods, rollback of sale or return operations (if something went wrong after tracking sale in the loyalty service).
 These 3 methods the highest level of abstraction: they are built on low-level methods that reflect the actual API and prived convenient interface for a programmer.
 
